@@ -1,0 +1,18 @@
+project493_art.m           
+This file is executable, implements ART reconstruction algorithm
+If the data contains all 540 views, set the parameter "compress" to be 1; if the number of views is reduced to 540/2 = 270 views, compress = 2; similarly, if the number of views =90, compress = 6.
+
+project493_sart.m
+This file is executable, implements SART reconstruction algorithm
+If the data contains all 540 views, set the parameter "compress" to be 1; if the number of views is reduced to 540/2 = 270 views, compress = 2; similarly, if the number of views =90, compress = 6
+
+project_data.mat
+This file contains a 256 by 256 true image, and a 512 by 540 sinogram
+
+paralleltomo.m
+This function constructs the imaging system matrix. 
+The function requires 4 inputs: size of the image (npixels = 256), number of views on the sinogram (540, 270, or 90), number of ray in each view (nrays = 512), and the physical distance between first and last ray (d = npixels*(nrays-1)/nrays).
+
+purge_rows.m
+This function removes the zero rows in the imaging system matrix, as well as the corresponding rows in data. 
+The function requires 2 inputs: the imaging system matrix, and the sinogram data.
