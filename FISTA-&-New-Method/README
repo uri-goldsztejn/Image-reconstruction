@@ -1,0 +1,24 @@
+FISTA and NM
+
+UnlocBox Functions
+div-op.m - Function created by UnlocBox (Cited in Final Report) to calculate divergence in function prox_tv.mat of an n
+gradient_op.m - Function calculating the gradient for a nxn matrix
+prox_tv.m - Calculates the proximal of TV by using the dual, as described in the paper "Fast Gradient-Based Algorithms for Constrained Total Variation Image Denoising and Deblurring Problem" by Beck and Teboulle
+
+Provided by Professor
+paralleltomo.m - Function provided by professor to define imaging operator.
+purge_row.m - removes all non zero elements
+project_data.mat - Contains sinogram and reference image
+
+Analysis of Imaging Data Function (Functions written by Professor Miamiao Zhang. This were used in CSE 586A)
+Dy - Forward Difference y direction
+Dx - Forward Difference x direction
+Dxt - Backward Difference x direction
+Dyt - Backward Difference y direction
+
+Written by Uri and Maria
+Fista_main.m - performs FISTA reconstruction of the CT image problem for 540, 270, and 90 views
+new_method_main.m - performs New Method's reconstruction of the CT image problem for 540, 270, and 90 views
+gradFUriTikhonov4.m - Calculates gradient of smoothing component in New Method as described in Methods section in Final Report
+norm_tv.m - Calculates norm of Total Variation Regularizer.
+Objective2.m - Function calculating the objective function for New Method.
